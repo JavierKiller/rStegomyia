@@ -37,4 +37,5 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
+URL: https://javierkiller.github.io/rStegomyia/
 RoxygenNote: 7.2.3

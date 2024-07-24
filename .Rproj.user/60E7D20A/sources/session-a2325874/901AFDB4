@@ -3,7 +3,7 @@
     "path": "~/rStegomyia/rStegomyia/DESCRIPTION",
     "project_path": "DESCRIPTION",
     "type": "dcf",
-    "hash": "0",
+    "hash": "59775949",
     "contents": "",
     "dirty": false,
     "created": 1721794129708.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "38,0",
+        "cursorPosition": "39,46",
         "scrollLine": "26"
     },
     "folds": "",
-    "lastKnownWriteTime": 1719448279,
+    "lastKnownWriteTime": 1721796935,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1719448279,
+    "last_content_update": 1721796935885,
     "read_only": false,
     "read_only_alternatives": []
 }

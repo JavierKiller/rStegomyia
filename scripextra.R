@@ -144,3 +144,7 @@ plot(shm2)
 usethis::use_data(df_for_map)
 
 get_maps_stegomyia_indices(df_for_map)
+
+
+# https://github.com/JavierKiller/rStegomyia.git
+# https://github.com/JavierKiller/rStegomyia.git
