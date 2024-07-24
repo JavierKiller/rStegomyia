@@ -4,5 +4,8 @@ pkgdown_sha: ~
 articles:
   load_raw_data: load_raw_data.html
   Make_to_maps_stegomyia_indices: Make_to_maps_stegomyia_indices.html
-last_built: 2024-07-17T23:32Z
+last_built: 2024-07-24T20:47Z
+urls:
+  reference: https://javierkiller.github.io/rStegomyia/reference
+  article: https://javierkiller.github.io/rStegomyia/articles
 

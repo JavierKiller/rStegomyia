@@ -71,8 +71,28 @@
 
     
     
+<p>The “Programa Estatal de Vigilancia Entomología y Control Integral de
+Enfermedades Trasmitidas por Vector” carries out various activities for
+disease prevention, which are guided by surveillance activities that
+provide entomological risk indices, which is why a Package rStegomyia
+will be made to calculate the indices of entomological risk in an
+automatic and timely manner for decision making.</p>
+<p>All activities are captured daily on a platform, where it is possible
+to download the data for reporting and analysis. In the case of
+Surveillance by Ovitrampa (VO), the platform calculates the risk indices
+but for the Entomological Study (EE) activity it calculates them per
+block worked, these indices are required per risk location on a weekly
+or daily basis.</p>
+<p>It is necessary to be able to calculate epidemiological week (SE)
+risk indices by type of study, risk locality and by epidemiological week
+in an automated manner.</p>
+<p>The EE activity evaluates a sample before (Encuesta) and after
+(Verificacion) of the comprehensive control activities to determine the
+entomological risk that exists in a large area to be worked on (Sectors
+or Locality) and if it requires reinforcing control and prevention
+actions.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">rStegomyia</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://javierkiller.github.io/rStegomyia/">rStegomyia</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; Loading required package: tidyverse</span></span>
 <span><span class="co">#&gt; ── <span style="font-weight: bold;">Attaching core tidyverse packages</span> ──────────────────────── tidyverse 2.0.0 ──</span></span>
 <span><span class="co">#&gt; <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">dplyr    </span> 1.1.3     <span style="color: #00BB00;">✔</span> <span style="color: #0000BB;">readr    </span> 2.1.4</span></span>
@@ -142,7 +162,14 @@
 <span><span class="co">#&gt; Loading required package: sf</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Linking to GEOS 3.11.2, GDAL 3.6.2, PROJ 9.2.0; sf_use_s2() is TRUE</span></span></code></pre></div>
-<p>Load at data of study entomology of file .txt and make dataframe</p>
+<p>Download the file .txt of Entomology Study from plataform “Vigilancia
+Entomológica y Control Integral del Vector”. Select the variables for
+your analysis and load the data of the Entomology Study of file .txt to
+make dataframe. If the variables are not specified, the variables that
+are going to be selected by default are: “Tipo de Estudio”,
+“Jurisdiccion”, “Localidad”, “Sector”, “Fecha de Inicio”, “Semana
+Epidemiologica”, “Casas Revisadas”, “Casas Positivas”, “Total de
+Recipientes con Agua”, “Total de Recipientes Positivos”.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">path_raw_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>,</span>
 <span>                             <span class="st">"estudio_entomologico1.txt"</span>,</span>
@@ -189,7 +216,8 @@
 <span><span class="co">#&gt; 4                           156                              3</span></span>
 <span><span class="co">#&gt; 5                           399                              9</span></span>
 <span><span class="co">#&gt; 6                           414                              9</span></span></code></pre></div>
-<p>cleand and format dataframe of study entomology</p>
+<p>Next, clean and give format to the dataframe´s variables of the
+Entomology Study</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">path_of_example</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>,</span>
 <span>                                 <span class="st">"qr.csv"</span>,</span>
@@ -224,7 +252,11 @@
 <span><span class="co">#&gt; 4                           156                              3</span></span>
 <span><span class="co">#&gt; 5                           399                              9</span></span>
 <span><span class="co">#&gt; 6                           414                              9</span></span></code></pre></div>
-<p>make to data frame of Stegomyia indices</p>
+<p>Select study type and sectors to analize the dataframe of the
+Entomology Study. If the study type is not specified, “Verificacion” is
+going to be selected by default. The function will calculate Stegomyia
+Indices and Index Status by Sector. Use that data to make a new
+dataframe</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">path_of_example2</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>,</span>
 <span>                                 <span class="st">"statusindicesector.csv"</span>,</span>
@@ -286,8 +318,8 @@
 <span><span class="co">#&gt; 19          Optimo</span></span>
 <span><span class="co">#&gt; 20          Optimo</span></span>
 <span><span class="co">#&gt; 21          Optimo</span></span></code></pre></div>
-<p>make to maps for Stegomia indices with sector in data frame of
-Stegomyia indices</p>
+<p>Use the new dataframe created to make maps for Stegomia Index Status
+with the sectors of Locality “Hermosillo”</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="va">list_of_maps</span> <span class="op">&lt;-</span><span class="fu"><a href="../reference/get_maps_stegomyia_indices.html">get_maps_stegomyia_indices</a></span><span class="op">(</span><span class="va">df_sitsgis</span><span class="op">)</span></span>

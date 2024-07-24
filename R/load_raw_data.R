@@ -10,14 +10,19 @@
 #' the original one. the names of the new columns will be the key number of
 #' the variable and the other with the name of the variable.
 #'
-#' @param  path a string with raw data path of .txt file, of activity "Estudios
-#' entomológicos en fase larval y pupal " of platafor "Vigilancia Entomológica
+#' @param  path A string with raw data path of .txt file, of activity "Estudios
+#' entomológicos en fase larval y pupal " of platform "Vigilancia Entomológica
 #' y Control Integral del Vector".
-#' @param col_name selected variable names, as deemed necessary to analyze.
+#' @param col_name Select variable names, as deemed necessary to analyze. If
+#' the variable names are not specified, the variable names that are going to
+#' be select by default:  "Tipo de Estudio", "Jurisdiccion", "Localidad",
+#' "Sector", "Fecha de Inicio", "Semana Epidemiologica", "Casas Revisadas",
+#' "Casas Positivas", "Total de Recipientes con Agua",
+#' "Total de Recipientes Positivos"
 #'
 #'
 #' @return
-#' A data frame with selected and format in variable of .txt file of plataform
+#' A dataframe with selected  variable of .txt file from platform
 #' "Vigilancia Entomológica y Control Integral del Vector" of activity "Estudio
 #' Entomologico de fase larval y pupal".
 #'
