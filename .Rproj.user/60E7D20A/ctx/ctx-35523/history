@@ -1,0 +1,512 @@
+system.file("extdata", package = "rStegomyia")
+devtools::document()
+pkgdown::build_site()
+system.file("extdata",
+"estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+"estudio_entomologico1.txt"
+load_raw_data("estudio_entomologico1.txt")
+system.file("extdata",
+"estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+system.file(            "estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+usethis::use_data_raw()
+usethis::use_data_raw()
+?usethis::use_data_raw()
+#path_raw_data <- "estudio_entomologico1.txt"
+#cargar un dataframe con la funsion load_raw_data
+dfsm <- load_raw_data(path_raw_data)
+#path_raw_data <- "estudio_entomologico1.txt"
+#cargar un dataframe con la funsion load_raw_data
+dfsm <- load_raw_data(path_raw_data)
+path_raw_data <- system.file("extdata",
+"estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+#path_raw_data <- "estudio_entomologico1.txt"
+#cargar un dataframe con la funsion load_raw_data
+dfsm <- load_raw_data(path_raw_data)
+#guardar el dfsm para el uso del paquete
+usethis::use_data(dfsm, internal = TRUE)
+#guardar el dfsm para el uso del paquete
+usethis::use_data_raw(dfsm, internal = TRUE)
+#guardar el dfsm para el uso del paquete
+usethis::use_data_raw("dfsm")
+devtools::clean()
+devtools::clean_vignettes()
+usethis::use_vignette("load_raw_data")
+library(rStegomyia)
+knitr::opts_chunk$set(
+collapse = TRUE,
+comment = "#>"
+)
+library(rStegomyia)
+system.file( "clippy.xlsx", package = "readxl")
+system.file("extdata", "clippy.xlsx", package = "readxl")
+system.file("extdata", package = "rStegomyia")
+usethis::use_data("inst/extdata/estudio_entomologico1.txt", internal = TRUE)
+usethis::use_data("inst/extdata/estudio_entomologico1.txt")
+system.file("starwars", package = "dplyr")
+library(dplyr)
+system.file("starwars", package = "dplyr")
+system.file("data", "starwars", package = "dplyr")
+system.file("data-raw", "starwars", package = "dplyr")
+system.file("data-raw", "starwars.rda", package = "dplyr")
+system.file("data", "starwars.rda", package = "dplyr")
+system.file( "starwars.rda", package = "dplyr")
+system.file( starwars, package = "dplyr")
+starwars
+system.file("data",
+"starwars.csv",
+package = "dplyr"
+)
+system.file("data",
+"starwars.rda",
+package = "dplyr"
+)
+system.file(
+"starwars.rda",
+package = "dplyr"
+)
+system.file("data",
+package = "dplyr"
+)
+system.file("data",
+package = "dplyr"
+)|> list.files()
+system.file("data-raw",
+package = "dplyr"
+)|> list.files()
+system.file(
+package = "dplyr"
+)|> list.files()
+system.file("doc",
+package = "dplyr"
+)|> list.files()
+browseVignettes("dplyr")
+vignette("rectangle", package = "dplyr")
+vignette( package = "dplyr")
+vignette("colwise", package = "dplyr")
+gapminder
+library(gapminder)
+library("gapminder")
+penguins
+system.file("extdata", package = "rStegomyia") |> list.files()
+system.file(
+package = "readxl"
+)|> list.files()
+system.file(
+package = "rStegomyia"
+)|> list.files()
+devtools::load_all()
+devtools::document()
+devtools::load_all()
+?test_path()
+test_path("estudio_entomologico1.txt")
+test_path("extdata", "estudio_entomologico1.txt")
+test_path("../extdata", "estudio_entomologico1.txt")
+library(testthat)
+test_path()
+test_path("extdata", "estudio_entomologico1.txt")
+pathtest <- test_path("extdata", "estudio_entomologico1.txt")
+pathtest
+test_that("assess_load_raw_data",
+{
+expected <- load_raw_data(pathtest)
+expect_s3_class(expected, "data.frame")
+expect_equal(dim(expected), c(42, 12))
+expect_named(expected, labels)
+}
+)
+getwd()
+getwd(test_path("extdata", "estudio_entomologico1.txt"))
+getwd()
+?getwd()
+setwd()
+devtools::document()
+devtools::load_all()
+devtools::document()
+source("~/rStegomyia/rStegomyia/R/load_raw_data_csv.R", echo=TRUE)
+source("~/rStegomyia/rStegomyia/R/load_raw_data_csv.R", echo=TRUE)
+path_raw_data <- system.file("extdata",
+"extdata/estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+system.file("extdata", package = "rStegomyia") |> list.files()
+path_raw_data <- system.file("extdata",
+"extdata/estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+system.file("extdata",
+"extdata/estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+path_raw_data <- system.file("extdata",
+"estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+path_raw_datacsv <- system.file("extdata",
+"estudio_entomologico1.csv",
+package = "rStegomyia"
+)
+dfsmcsv <- load_raw_data_csv(path_raw_datacsv)
+dfsmcsv <- load_raw_data_csv(path_raw_datacsv)
+?read_csv()
+dfsmcsv <- load_raw_data_csv(path_raw_datacsv)
+?read_csv()
+source("~/rStegomyia/rStegomyia/R/load_raw_data_csv.R", echo=TRUE)
+dfsmcsv <- load_raw_data_csv(path_raw_datacsv)
+source("~/rStegomyia/rStegomyia/R/load_raw_data_csv.R", echo=TRUE)
+dfsmcsv <- load_raw_data_csv(path_raw_datacsv)
+?test_path()
+#pathtest <- test_path("extdata", "estudio_entomologico1.txt")
+test_path("extdata")
+system.file(rStegomyia)
+system.file("extdata", package = "rStegomyia") |> list.files()
+system.file( package = "rStegomyia") |> list.files()
+system.file( package = "rStegomyia")
+usethis::use_pkgdown()
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+use_r("clean_raw_data")
+library(devtools)
+use_r("clean_raw_data")
+# crear un test de la funcion tal
+usethis::use_test("clean_raw_data")
+dfsm
+library(rStegomyia)
+dfsm
+dfsm <- load_raw_data(path_raw_data)
+#guardar el dfsm para el uso del paquete
+usethis::use_data_raw("dfsm")
+#guardar el dfsm para el uso del paquete
+usethis::use_data_raw("dfsm")
+dfsm
+dfsm <- load_raw_data(path_raw_data)
+path_raw_data
+dfsm <- load_raw_data(path_raw_data)
+dfsm <- load_raw_data(path_raw_data)
+dfsm <- load_raw_data("inst/extdata/estudio_entomologico1.txt")
+#guardar el dfsm para el uso del paquete
+usethis::use_data_raw(dfsm, internal = TRUE)
+#guardar el dfsm para el uso del paquete
+usethis::use_data_raw(dfsm )
+#guardar el dfsm para el uso del paquete
+usethis::use_data(dfsm)
+test_that("assess_clean_raw_data", {
+expected <- clean_raw_data(dfsm, path_out = path_data)
+#expect_identical(str(colt), str(expected))
+expect_s3_class(expected, "data.frame")
+#expect_equal(dim(expected), c(42, 12))
+}
+)
+test_that("assess_clean_raw_data", {
+expected <- clean_raw_data(dfsm, path_out = path_data)
+#expect_identical(str(colt), str(expected))
+expect_s3_class(expected, "data.frame")
+#expect_equal(dim(expected), c(42, 12))
+}
+)
+expected <- clean_raw_data(dfsm, path_out = path_data)
+dfsm
+dfsm
+expected <- clean_raw_data(dfsm, path_out = path_data)
+dfsm
+path_data <- "data/qr.csv"
+expected <- clean_raw_data(dfsm, path_out = path_data)
+#expect_identical(str(colt), str(expected))
+expect_s3_class(expected, "data.frame")
+test_that("assess_clean_raw_data", {
+expected <- clean_raw_data(dfsm, path_out = path_data)
+#expect_identical(str(colt), str(expected))
+expect_s3_class(expected, "data.frame")
+#expect_equal(dim(expected), c(42, 12))
+}
+)
+expect_equal(dim(expected), c(42, 12))
+labels_full <-c("Tipo_de_Estudio",
+"Clave_Jurisdiccion",
+"Jurisdiccion",
+"Clave_Municipio",
+"Municipio",
+"Clave_Localidad",
+"Localidad",
+"Sector",
+"Fecha_de_Inicio",
+"Semana_Epidemiologica",
+"Casas_Revisadas",
+"Casas_Positivas",
+"Total_de_Recipientes_con_Agua",
+"Total_de_Recipientes_Positivos",
+"Total_de_Recipientes_Positivos_a_Pupas",
+"No._Total_de_Pupas_en_Recipientes",
+"Recipientes_Tratables",
+"Recipientes_Controlables",
+"Recipientes_Eliminables"
+)
+dfsm_lew <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_sub
+)
+labels_sub
+dfsm_lew <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_sub
+)
+labels_sub <- c(
+"Tipo_de_Estudio",
+"Semana_Epidemiologica",
+"Casas_Revisadas",
+"Casas_Positivas",
+"Total_de_Recipientes_con_Agua",
+"Total_de_Recipientes_Positivos")
+dfsm_lew <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_sub
+)
+dfsm_lew <- load_raw_data(test_path(
+"extdata",
+"estudio_entomologico1.txt"
+),
+col_name = labels_sub
+)
+dfsm_full <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_full
+)
+labels_full <-c("Tipo de Estudio",
+"Clave Jurisdiccion",
+"Jurisdiccion",
+"Clave Municipio",
+"Municipio",
+"Clave Localidad",
+"Localidad",
+"Sector",
+"Fecha de Inicio",
+"Semana Epidemiologica",
+"Casas Revisadas",
+"Casas Positivas",
+"Total de Recipientes con Agua",
+"Total de Recipientes Positivos",
+"Total de Recipientes Positivos a Pupas",
+"No. Total de Pupas en Recipientes",
+"Recipientes Tratables",
+"Recipientes Controlables",
+"Recipientes Eliminables"
+)
+labels_full <-c("Tipo de Estudio",
+"Clave Jurisdiccion",
+"Jurisdiccion",
+"Clave Municipio",
+"Municipio",
+"Clave Localidad",
+"Localidad",
+"Sector",
+"Fecha de Inicio",
+"Semana Epidemiologica",
+"Casas Revisadas",
+"Casas Positivas",
+"Total de Recipientes con Agua",
+"Total de Recipientes Positivos",
+"Total de Recipientes Positivos a Pupas",
+"No. Total de Pupas en Recipientes",
+"Recipientes Tratables",
+"Recipientes Controlables",
+"Recipientes Eliminables"
+)
+labels_sub <- c(
+"Tipo de Estudio",
+"Semana Epidemiologica",
+"Casas Revisadas",
+"Casas Positivas",
+"Total de Recipientes con Agua",
+"Total de Recipientes Positivos")
+dfsm_lew <- load_raw_data(test_path(
+"extdata",
+"estudio_entomologico1.txt"
+),
+col_name = labels_sub
+)
+dfsm_full <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_full
+)
+labels_full <-c("Tipo de Estudio",
+"Jurisdiccion",
+"Municipio",
+"Localidad",
+"Sector",
+"Fecha de Inicio",
+"Semana Epidemiologica",
+"Casas Revisadas",
+"Casas Positivas",
+"Total de Recipientes con Agua",
+"Total de Recipientes Positivos",
+"Total de Recipientes Positivos a Pupas",
+"No. Total de Pupas en Recipientes",
+"Recipientes Tratables",
+"Recipientes Controlables",
+"Recipientes Eliminables"
+)
+dfsm_full <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_full
+)
+usethis::use_data(dfsm_lew)
+usethis::use_data(dfsm_full)
+str(dfsm_lew)
+str(dfsm_full)
+str(dfsm)
+dfsm_lew <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_sub
+)
+usethis::use_data(dfsm_lew,  overwrite = TRUE)
+expected <- clean_raw_data(dfsm_lew, path_out = path_data_lew)
+path_data_lew <- "extdata/qr_lew.csv"
+path_data_full <- "extdata/qr_full.csv"
+test_that("assess_clean_raw_data_sub", {
+expected <- clean_raw_data(dfsm_lew, path_out = path_data_lew)
+expect_identical(str(colt), str(expected))
+expect_s3_class(expected, "data.frame")
+expect_equal(dim(expected), c(42, 7))
+}
+)
+expected <- clean_raw_data(dfsm_lew, path_out = path_data_lew)
+xx<- clean_raw_data(dfsm_lew)
+str(xx)
+#crear un vingette
+usethis:vignette("clean_raw_data")
+# crear una funcion para el paquete
+use_r("get_stegomyia_indices_by_type_of_study_and_geo_is")
+dfsm <- load_raw_data("inst/extdata/estudio_entomologico1.txt")
+dfsm_full <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_full
+)
+labels_full <-c("Tipo de Estudio",
+"Jurisdiccion",
+"Municipio",
+"Localidad",
+"Sector",
+"Fecha de Inicio",
+"Semana Epidemiologica",
+"Casas Revisadas",
+"Casas Positivas",
+"Total de Recipientes con Agua",
+"Total de Recipientes Positivos",
+"Total de Recipientes Positivos a Pupas",
+"No. Total de Pupas en Recipientes",
+"Recipientes Tratables",
+"Recipientes Controlables",
+"Recipientes Eliminables"
+)
+dfsm_full <- load_raw_data("inst/extdata/estudio_entomologico1.txt",
+col_name = labels_full
+)
+path_data <- "data-raw/qr.csv"
+path_data_full <- "data-raw/qr_full.csv"
+df_indx <- clean_raw_data(dfsm, path_out = path_data)
+df_typ <- clean_raw_data(dfsm_full, path_out = path_data_full)
+usethis::use_data(df_indx)
+usethis::use_data(df_typ)
+get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx)
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx)
+source("~/rStegomyia/rStegomyia/R/get_stegomyia_indices_by_type_of_study_and_geo_is.R", echo=TRUE)
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx)
+list(df_indx$Sector)
+sectors <-list(df_indx$Sector)
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx, var=sectors)
+sectors <-c(list(df_indx$Sector))
+sectors <-c(list(df_indx$Sector))
+sectors
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx, var=sectors)
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df=df_indx, var=sectors)
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df=df_indx, var=sectors)
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df=df_indx,
+var= c("569",
+"401",
+"400"))
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df=df_indx,
+var= c("569",
+"401",
+"400"))
+dfprue
+sectors <-c(df_indx$Sector)
+sectors
+dfprue <- get_stegomyia_indices_by_type_of_study_and_geo_is(df=df_indx,
+var= c(sectors))
+dfprue
+# crear un test de la funcion tal
+usethis::use_test("get_stegomyia_indices_by_type_of_study_and_geo_is")
+df_indx
+get_stegomyia_indices_by_type_of_study_and_geo_is(df = df_indx,
+st = "Verificacion",
+var = "1248",
+path_out="extdata/statusindicesector.csv"
+)
+get_stegomyia_indices_by_type_of_study_and_geo_is(df = df_indx,
+st = "Verificacion",
+var = "1248"
+)
+View(dfprue)
+View(dfsm)
+View(dfsm)
+usethis::use_pkgdown()
+pkgdown::build_site()
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+#crear el libro de quarto
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+system.file("extdata", package = "rStegomyia") |> list.files()
+system.file("extdata",
+"estudio_entomologico1.txt",
+package = "rStegomyia"
+)
+system.file("extdata",
+"qr.csv",
+package = "rStegomyia"
+)
+devtools::document()
+devtools::load_all()
+system.file("extdata", package = "rStegomyia") |> list.files()
+#crear el libro de quarto
+pkgdown::build_site()
+#crear el libro de quarto
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+#crear el libro de quarto
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+#crear el libro de quarto
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+system.file("extdata", package = "rStegomyia") |> list.files()
+#crear el libro de quarto
+pkgdown::build_site()
+#crear el libro de quarto
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()
+system.file("extdata", package = "rStegomyia") |> list.files()
+#crear el libro de quarto
+pkgdown::build_site()
+system.file("extdata",
+"statusindicesector.csv",
+package = "rStegomyia"
+)
+path_raw_data
+labels
+labels_sub
+system.file("extdata", package = "rStegomyia")
+system.file("extdata", package = "rStegomyia")
+system.file("extdata", package = "rStegomyia")
+#crear el libro de quarto
+pkgdown::build_site()
+#crear el libro de quarto
+pkgdown::build_site()
+devtools::document()
+devtools::load_all()

@@ -1,0 +1,27 @@
+{
+    "id": "7CFD21D0",
+    "path": "~/rStegomyia/rStegomyia/vignettes/load_raw_data.Rmd",
+    "project_path": "vignettes/load_raw_data.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1721256436033.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "last_setup_crc32": "",
+        "cursorPosition": "23,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1721257279,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1721257279922,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,26 @@
+{
+    "id": "12DFDAED",
+    "path": "~/rStegomyia/rStegomyia/R/get_maps_stegomyia_indices.R",
+    "project_path": "R/get_maps_stegomyia_indices.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1721167637047.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "91,2",
+        "scrollLine": "88"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1721258879,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1721258879881,
+    "read_only": false,
+    "read_only_alternatives": []
+}
