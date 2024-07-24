@@ -1,0 +1,8 @@
+pandoc: 3.1.11
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  load_raw_data: load_raw_data.html
+  Make_to_maps_stegomyia_indices: Make_to_maps_stegomyia_indices.html
+last_built: 2024-07-17T23:32Z
+
