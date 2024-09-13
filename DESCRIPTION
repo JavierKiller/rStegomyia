@@ -20,13 +20,9 @@ Depends:
     sp,
     sf
 Imports: 
-    tidyverse,
-    lazyeval,
     lubridate,
     rlang,
-    dplyr,
-    ggplot2,
-    readr,
+    tidyverse,
     ggmap,
     maptools,
     rgeos,
