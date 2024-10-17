@@ -1,5 +1,6 @@
 #' Get stegomyia indices by type of study and star date
 #'
+#'
 #' The Stegomyia indices are calculated for each sampling. Once the data have
 #' been loaded with function "load_rwa_data" and changed type data of function
 #' "clean_raw_data", select study type and date variable using the following
@@ -27,6 +28,7 @@
 #'
 #' df_stegomyia_sd <- get_stegomyia_indices_by_type_of_study_and_ew(df_indx,
 #'                                                      st = "Verificacion",
+#'   
 #'                                                      ew = "2")
 #' head(df_stegomyia_sd)
 #'

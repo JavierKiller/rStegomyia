@@ -1,5 +1,6 @@
 #' Load raw data  of entomology study
 #'
+#'
 #' @description
 #' Load_raw_data from a .txt file of the entomology study conducted on the
 #' platform "Vigilancia Entomológica y Control Integral del Vector." Choose the

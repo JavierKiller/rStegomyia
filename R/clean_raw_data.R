@@ -1,5 +1,6 @@
 #'  clean raw data from a entomology study
 #'
+#'
 #' @description
 #' The function creates a data.frame that contains data and changes type data. The
 #' data is assumed to have been previously loaded using the function

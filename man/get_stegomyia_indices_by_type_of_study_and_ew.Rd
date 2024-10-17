@@ -40,6 +40,7 @@ been loaded with function "load_rwa_data" and changed type data of function
 
 df_stegomyia_sd <- get_stegomyia_indices_by_type_of_study_and_ew(df_indx,
                                                      st = "Verificacion",
+  
                                                      ew = "2")
 head(df_stegomyia_sd)
 

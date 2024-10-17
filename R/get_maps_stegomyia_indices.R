@@ -1,5 +1,6 @@
 #' get_maps_stegomyia_indices
 #'
+#'
 #' This function generates maps for three Stegomyia indices (Entomological Risk
 #' Indices) of dataframe make to funtion
 #' get_stegomyia_indices_by_type_of_study_and_geo_is.

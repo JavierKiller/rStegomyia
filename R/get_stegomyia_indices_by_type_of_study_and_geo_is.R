@@ -1,5 +1,6 @@
 #' Get stegomyia indices by type of study and geographic variable
 #'
+#'
 #' The Stegomyia indices are calculated for each sampling. Once the data have
 #' been loaded with the function "load_raw_data" and processed with the function
 #' "clean_raw_data", you can select the study type and geographic variable using the

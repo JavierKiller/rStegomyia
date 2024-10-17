@@ -1,5 +1,6 @@
 #' Positive Typology Container by type of study and location
 #'
+#'
 #' Complementary to the Stegomyia indices, the type of positive container is
 #'  determined to establish the preference of mosquitoes in the use of
 #'  breeding sites.

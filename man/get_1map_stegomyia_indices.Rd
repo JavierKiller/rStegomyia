@@ -34,8 +34,8 @@ indices.
 }
 \examples{
 
-Sindx_maps <- get_1map_stegomyia_indices(df_for_map)
+Sindx_map <- get_1map_stegomyia_indices(df_for_map)
 
-Sindx_maps
+Sindx_map
 
 }
