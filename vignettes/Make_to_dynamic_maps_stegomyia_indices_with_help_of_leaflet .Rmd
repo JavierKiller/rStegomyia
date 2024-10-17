@@ -1,8 +1,8 @@
 ---
-title: "Make to maps Stegomyia Indices"
+title: "Make to dynamic maps Stegomyia Indices with help of leaflet"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Make_to_maps_stegomyia_indices}
+  %\VignetteIndexEntry{Make_to_dynamic_maps_stegomyia_indices_with_help_of_leaflet}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -90,8 +90,8 @@ Use the new dataframe created to make maps for Stegomia Index Status with the se
 
 ```{r}
 
-list_of_maps <-get_maps_stegomyia_indices(df_sitsgis)
+Stegomyia_indx_map <-get_1map_stegomyia_indices(df_sitsgis)
 
-list_of_maps
+Stegomyia_indx_map
 ```
 
