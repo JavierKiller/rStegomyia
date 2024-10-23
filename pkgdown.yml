@@ -1,0 +1,10 @@
+pandoc: 3.1.11
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  Make_to_dynamic_maps_stegomyia_indices_with_help_of_leaflet: Make_to_dynamic_maps_stegomyia_indices_with_help_of_leaflet.html
+  Make_to_maps_stegomyia_indices_with_help_of_ggplot: Make_to_maps_stegomyia_indices_with_help_of_ggplot.html
+last_built: 2024-10-23T22:11Z
+urls:
+  reference: https://javierkiller.github.io/rStegomyia/reference
+  article: https://javierkiller.github.io/rStegomyia/articles
