@@ -46,7 +46,7 @@ get_1map_stegomyia_indices <- function(
   }
   
   w2 <- st_transform(m1,
-                     4326)
+                     crs =4326)
   #rename of variable
   w2 <- w2 %>%
     rename(Sector = SECCION)%>%
@@ -56,7 +56,10 @@ get_1map_stegomyia_indices <- function(
     left_join(df,
                          by = "Sector")
   w2_ <- w2_ %>% drop_na()
-    
+  
+  w2_ <- st_transform(w2_,
+                     4326)
+  
   # Niveles
   levels=c("Optimo",
            "Bueno",
@@ -79,6 +82,10 @@ get_1map_stegomyia_indices <- function(
     "<b>", "BI: ", "</b>", round(as.numeric(w2_$BI), 1), "%", "<br>",  
     "<b>", "index_status_BI: ", "</b>", as.character(w2_$index_status_BI), "<br>"
   ) %>% lapply(htmltools::HTML)  # Se aplica formato HTML
+  
+  m0 <- st_transform(m0,
+                     crs = 4326
+                     )
   
   map_stegomyia_indices <- leaflet(w2_) %>% 
     addPolygons(data= m0, # Se carga capa de referencia municipal
@@ -164,9 +171,14 @@ get_1map_stegomyia_indices <- function(
     addLayersControl(
       baseGroups = c("index_status_HI", "index_status_CI", "index_status_BI"),
       options = layersControlOptions(collapsed = FALSE, position = "bottomleft"))
+  
+  if (!dir.exists("visualization")) {
+    dir.create("visualization")
+  }
+  
 
    
-  saveWidget(map_stegomyia_indices,"Indices_Stegomyia.html", title= "Sonora: Indies Estegomia", selfcontained = T, libdir = "lib")
+  saveWidget(map_stegomyia_indices,"visualization/Indices_Stegomyia.html", title= "Sonora: Indies Estegomia", selfcontained = T, libdir = "lib")
   
   
   return(map_stegomyia_indices)

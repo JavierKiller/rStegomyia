@@ -40,6 +40,8 @@ Imports:
 Suggests: 
     knitr,
     rmarkdown,
+    sp,
+    sf,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 URL: https://javierkiller.github.io/rStegomyia/

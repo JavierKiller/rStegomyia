@@ -57,6 +57,9 @@ get_maps_stegomyia_indices <- function(
     right_join(df,
                by = "Sector")
   w2_ <- w2_ %>% drop_na()
+  
+  w2_ <- st_transform(w2_,
+                      4326)
 
   colores_id <- c(
     "Optimo" = "blue",
