@@ -1,8 +1,8 @@
 ---
-title: "Create dynamic maps with stegomyia indices"
+title: "Create animated maps with stegomyia indices"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Create_dynamic_maps_with_stegomyia_indices_T}
+  %\VignetteIndexEntry{Create_animated_maps_with_stegomyia_indices}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
