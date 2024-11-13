@@ -1,0 +1,48 @@
+Package: rStegomyia
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Config/testthat/edition: 3
+Depends: 
+    R (>= 4.3.0),
+    tidyverse,
+    ggmap,
+    htmltools,
+    htmlwidgets,
+    leaflet,
+    leaflet.extras,
+    raster,
+    sp,
+    sf
+Imports: 
+    lubridate,
+    rlang,
+    tidyverse,
+    ggplot2,
+    htmltools,
+    htmlwidgets,
+    leaflet,
+    leaflet.extras,
+    raster,
+    GISTools,
+    tidyverse,
+    ggmap,
+    raster,
+    sp,
+    sf
+Suggests: 
+    knitr,
+    rmarkdown,
+    sp,
+    sf,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://javierkiller.github.io/rStegomyia/
+RoxygenNote: 7.3.2

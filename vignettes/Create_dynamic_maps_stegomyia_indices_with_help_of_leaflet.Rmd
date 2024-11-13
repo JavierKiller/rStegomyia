@@ -1,0 +1,96 @@
+---
+title: "Create dynamic maps Stegomyia Indices with help of leaflet"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Create_dynamic_maps_stegomyia_indices_with_help_of_leaflet}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+#  Make to maps Stegomyia Indices
+
+## The origin of data
+
+
+The "Programa Estatal de Vigilancia Entomología y Control Integral de Enfermedades Trasmitidas por Vector" carries out various activities for disease prevention, which are guided by surveillance activities that provide entomological risk indices, which is why a Package rStegomyia will be made to calculate the indices of entomological risk in an automatic and timely manner for decision making.
+
+All activities are captured daily on a platform, where it is possible to download the data for reporting and analysis. In the case of Surveillance by Ovitrampa (VO), the platform calculates the risk indices but for the Entomological Study (EE) activity it calculates them per block worked, these indices are required per risk location on a weekly or daily basis.
+
+It is necessary to be able to calculate epidemiological week (SE) risk indices by type of study, risk locality and by epidemiological week in an automated manner.
+
+The EE activity evaluates a sample before (Encuesta) and after (Verificacion) of the comprehensive control activities to determine the entomological risk that exists in a large area to be worked on (Sectors or Locality) and if it requires reinforcing control and prevention actions.
+
+```{r setup}
+library(rStegomyia)
+```
+## Load raw data 
+
+Download the file .txt of Entomology Study from plataform "Vigilancia Entomológica y Control Integral del Vector".
+Select the variables for your analysis and load the data of the Entomology Study of file .txt  to make dataframe.
+If the variables are not specified, the variables that are going to be selected by default are:  "Tipo de Estudio", "Jurisdiccion", "Localidad", "Sector", "Fecha de Inicio", "Semana Epidemiologica", "Casas Revisadas", "Casas Positivas", "Total de Recipientes con Agua", "Total de Recipientes Positivos".
+
+```{r}
+path_raw_data <- system.file("extdata",
+                             "estudio_entomologico1.txt",
+                             package = "rStegomyia"
+                             )
+
+df_lrd <- load_raw_data(path_raw_data)
+
+head(df_lrd)
+```
+## Clean raw data
+
+Next, clean and give format to the dataframe´s variables of the Entomology Study  
+
+```{r}
+path_of_example = c(system.file("extdata",
+                                 "qr.csv",
+                                 package = "rStegomyia"
+                                 )
+                    )
+ df_crd <- clean_raw_data(df_lrd,
+               path_out = path_of_example
+               )
+
+ head(df_crd)
+
+```
+## Calcul Stegomyia indices by type of study and geographic area  
+
+Select study type and sectors to analize the dataframe of the Entomology Study. If the study type is not specified, "Verificacion" is going to be selected by default. The function will calculate Stegomyia Indices  and Index Status by Sector. Use that data to make a new dataframe
+```{r}
+path_of_example2 = c(system.file("extdata",
+                                 "statusindicesector.csv",
+                                 package = "rStegomyia"
+                                 )
+                    )
+
+
+sectors <-c(df_crd$Sector)
+
+df_sitsgis <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_crd,
+                                                            var= c(sectors),
+                                                            path_out = path_of_example2
+                                                            )
+df_sitsgis
+
+```
+## Make the maps with status of Stegomyia indices 
+
+Use the new dataframe created to make maps for Stegomia Index Status with the sectors of Locality "Hermosillo"
+
+```{r}
+
+Stegomyia_indx_map <-get_1map_stegomyia_indices(df_sitsgis)
+
+Stegomyia_indx_map
+```
+
