@@ -42,14 +42,9 @@ Select the variables for your analysis and load the data of the Entomology Study
 If the variables are not specified, the variables that are going to be selected by default are:  "Tipo de Estudio", "Jurisdiccion", "Localidad", "Sector", "Fecha de Inicio", "Semana Epidemiologica", "Casas Revisadas", "Casas Positivas", "Total de Recipientes con Agua", "Total de Recipientes Positivos".
 
 ```{r}
-#path2016<- c("C:/Users/Javier Edgar Verdugo/Desktop/ELB/EE/2016/")
-#path2017<- c("C:/Users/Javier Edgar Verdugo/Desktop/ELB/EE/2017/")
-#path2018<- c("C:/Users/Javier Edgar Verdugo/Desktop/ELB/EE/2018/")
-#path2019<- c("C:/Users/Javier Edgar Verdugo/Desktop/ELB/EE/2019/")
-#path2020<- c("C:/Users/Javier Edgar Verdugo/Desktop/ELB/EE/2020/")
-path2021<- c("C:/Users/Javier Edgar Verdugo/Desktop/ELB/EE/2021/")
+pathprueva <- c("visualization/ejemplo/")
 
-pathalfa <- path2021
+pathalfa <- pathprueva
 
 path0 <-paste0(pathalfa,"DescargaEntomologicoe26.txt")
 
