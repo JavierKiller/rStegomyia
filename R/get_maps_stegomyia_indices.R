@@ -71,11 +71,11 @@ get_maps_stegomyia_indices <- function(
   p_HI <- ggplot() +
     geom_sf(data = m0,
             fill = NA,
-            size = 0.5) +
+            size = 3) +
     geom_sf(data = w2_,
             aes(fill = index_status_HI),
             color = "black",
-            size = 0.5) +
+            size = 3) +
     coord_sf() +
     labs(title = "Stegomyia House Index in Hermosillo") +
     scale_fill_manual(values = colores_id)
@@ -83,11 +83,11 @@ get_maps_stegomyia_indices <- function(
   p_CI <- ggplot() +
     geom_sf(data = m0,
             fill = NA,
-            size = 0.5) +
+            size = 3) +
     geom_sf(data = w2_,
             aes(fill = index_status_CI),
             color = "black",
-            size = 0.5) +
+            size = 3) +
     coord_sf() +
     labs(title = "Stegomyia Container Index in Hermosillo") +
     scale_fill_manual(values = colores_id)
@@ -96,11 +96,11 @@ get_maps_stegomyia_indices <- function(
   p_BI <- ggplot() +
     geom_sf(data = m0,
             fill = NA,
-            size = 0.5) +
+            size = 3) +
     geom_sf(data = w2_,
             aes(fill = index_status_BI),
             color = "black",
-            size = 0.5) +
+            size = 3) +
     coord_sf() +
     labs(title = "Stegomyia Breteau Index in Hermosillo") +
     scale_fill_manual(values = colores_id)
@@ -108,9 +108,9 @@ get_maps_stegomyia_indices <- function(
 
   listmaps<-list(p_HI, p_CI, p_BI)
 
-  ggsave("p_HI.png", path = "visualization")
-  ggsave("p_CI.png", path = "visualization")
-  ggsave("p_BI.png", path = "visualization")
+  ggsave("p_HI.png", path = "visualization", width = 10, height = 8, units = "in")
+  ggsave("p_CI.png", path = "visualization", width = 10, height = 8, units = "in")
+  ggsave("p_BI.png", path = "visualization", width = 10, height = 8, units = "in")
 
   return(listmaps)
 
