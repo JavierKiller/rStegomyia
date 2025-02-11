@@ -4,7 +4,7 @@ authors:
 - family-names: "Verdugo Molina"
   given-names: "Javier Edgar"
   title: "R Package index Stegomyia"
-version: 2.0.4
+version: 1.0.0
 date-released: 2025-02-11
 url: "https://javierkiller.github.io/rStegomyia/"
 type: software
