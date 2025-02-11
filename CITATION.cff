@@ -1,6 +1,5 @@
 cff-version: 1.2.0
 message: "The calculation of Stegomyia indices"
-license: BSD-3-Clause
 authors:
 - family-names: "Verdugo Molina"
   given-names: "Javier Edgar"
@@ -8,7 +7,6 @@ authors:
   given-names: "Saul Diaz"
   website: "https://investigadores.unison.mx/es/persons/sa%C3%BAl-d%C3%ADaz-infante-velasco"
   title: "R Package index Stegomyia"
-date-released: 2025-02-11
 url: "https://javierkiller.github.io/rStegomyia/"
 type: software
 repository-code: "https://github.com/JavierKiller/rStegomyia"
