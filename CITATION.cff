@@ -1,17 +1,18 @@
+---
 cff-version: 1.2.0
-message: "The calculation of Stegomyia indices"
+message: The calculation of Stegomyia indices
 authors:
-- family-names: "Verdugo Molina"
-  given-names: "Javier Edgar"
-- family-names: "Infante Velasco"
-  given-names: "Saul Diaz"
-  website: "https://investigadores.unison.mx/es/persons/sa%C3%BAl-d%C3%ADaz-infante-velasco"
-title: "R Package index Stegomyia"
-url: "https://javierkiller.github.io/rStegomyia/"
+  - family-names: Verdugo Molina
+    given-names: Javier Edgar
+  - family-names: Infante Velasco
+    given-names: Saul Diaz
+    website: https://investigadores.unison.mx/es/persons/sa%C3%BAl-d%C3%ADaz-infante-velasco
+title: R Package index Stegomyia
+url: https://javierkiller.github.io/rStegomyia/
 type: software
-repository-code: "https://github.com/JavierKiller/rStegomyia"
+repository-code: https://github.com/JavierKiller/rStegomyia
 keywords:
-      - Stegomyia
-      - House Index 
-      - Container Index
-      - Breteau Index
+  - Stegomyia
+  - House Index
+  - Container Index
+  - Breteau Index
