@@ -8,6 +8,7 @@ authors:
     given-names: Saul Diaz
     website: https://investigadores.unison.mx/es/persons/sa%C3%BAl-d%C3%ADaz-infante-velasco
 title: R Package index Stegomyia
+DOI: 10.5281/zenodo.14853868
 url: https://javierkiller.github.io/rStegomyia/
 type: software
 repository-code: https://github.com/JavierKiller/rStegomyia
