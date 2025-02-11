@@ -3,6 +3,9 @@ message: "The calculation of Stegomyia indices "
 authors:
 - family-names: "Verdugo Molina"
   given-names: "Javier Edgar"
+- family-names: "Infante Velasco"
+  given-names: "Saul Diaz"
+  website: "https://investigadores.unison.mx/es/persons/sa%C3%BAl-d%C3%ADaz-infante-velasco"
   title: "R Package index Stegomyia"
 version: 1.0.0
 date-released: 2025-02-11
